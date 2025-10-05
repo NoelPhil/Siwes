@@ -261,7 +261,7 @@ html {
 }
 
 .current-date {
-  width: 179px;
+  width: 200px;
   height: 22px;
   display: flex;
   align-items: center;
@@ -269,7 +269,7 @@ html {
 }
 
 .date {
-  font-size: clamp(10px, 5vw, 20px);
+  font-size: clamp(5px, 5vw, 20px);
 }
 
 /* Temperature container */
