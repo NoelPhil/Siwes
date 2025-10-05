@@ -257,7 +257,7 @@ html {
 }
 
 .city {
-  font-size: clamp(5px, 6vw, 30px);
+  font-size: clamp(5px, 5vw, 30px);
 }
 
 .current-date {
@@ -269,7 +269,7 @@ html {
 }
 
 .date {
-  font-size: clamp(5px, 5vw, 20px);
+  font-size: clamp(5px, 5vw, 15px);
 }
 
 /* Temperature container */
