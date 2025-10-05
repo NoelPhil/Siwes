@@ -42,6 +42,8 @@ html {
   /* margin: 0; */
   width: 343px;
   background-color: #02012c;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .header {
@@ -157,6 +159,7 @@ html {
   height: 56px;
   position: absolute;
   bottom: 0;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
@@ -455,7 +458,7 @@ html {
   height: 19px;
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 /* Hourly forecast container */
@@ -549,4 +552,10 @@ html {
   width: 26px;
   height: 24px;
   font-size: 20px;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
 }
