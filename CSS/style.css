@@ -128,6 +128,10 @@ html {
   width: 343px;
 }
 
+.search::placeholder {
+  color: white;
+}
+
 .search .search-input {
   width: 100%;
   height: 56px;
@@ -136,6 +140,7 @@ html {
   padding: 16px 24px;
   border-radius: 12px;
   background-color: #262540;
+  color: white;
 }
 
 .search .search-icon {
@@ -158,6 +163,20 @@ html {
   padding: 16px 24px;
   border-radius: 12px;
   background-color: #4658d9;
+  padding: 10px 10px;
+}
+
+.button {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
 }
 
 /* Content container */
@@ -220,7 +239,7 @@ html {
 
 /* Location Info */
 .location-info {
-  width: 219px;
+  width: 300px;
   height: 68px;
   display: flex;
   gap: 12px;
@@ -230,7 +249,7 @@ html {
 }
 
 .current-city {
-  width: 219px;
+  width: 300px;
   height: 34px;
   display: flex;
   align-items: center;
@@ -238,12 +257,15 @@ html {
 }
 
 .city {
-  font-size: clamp(16px, 6vw, 30px);
+  font-size: clamp(5px, 6vw, 30px);
 }
 
 .current-date {
   width: 179px;
   height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .date {
