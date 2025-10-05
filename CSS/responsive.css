@@ -1,0 +1,389 @@
+/* Mobile screen (375px+) */
+@media screen and (min-width: 23.5em) {
+}
+
+/* Tablet screen (768px+) */
+@media screen and (min-width: 48em) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .header {
+    width: 720px;
+    height: 43px;
+  }
+
+  .logo {
+    width: 601px;
+    height: 40px;
+    gap: 10px;
+  }
+
+  .settings-container {
+    width: 119px;
+    height: 43px;
+    gap: 16px;
+  }
+
+  .units {
+    width: 119px;
+    height: 43px;
+    gap: 10px;
+    /* padding: 12px 16px; */
+    border-radius: 8px;
+  }
+
+  .title-box {
+    width: 720px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    width: 482px;
+    height: 124px;
+  }
+
+  .main-content {
+    width: 720px;
+    height: 1478px;
+  }
+
+  .search-main-container {
+    width: 720px;
+    height: 56px;
+    align-items: center;
+  }
+
+  .search-container {
+    width: 720px;
+    height: 56px;
+    gap: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .search-box {
+    width: 720px;
+    height: 56px;
+    position: relative;
+    /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px; */
+  }
+
+  .search {
+    width: 590px;
+    height: 56px;
+    position: absolute;
+    left: 0;
+  }
+
+  .search .search-input {
+    height: 56px;
+    gap: 16px;
+  }
+
+  .search-button {
+    width: 114px;
+    height: 56px;
+    position: absolute;
+    right: 0;
+  }
+
+  .content-container {
+    width: 720px;
+    height: 1390px;
+  }
+
+  .left-content {
+    width: 720px;
+    height: 665px;
+  }
+
+  .weather-info-container {
+    width: 720px;
+    height: 424px;
+  }
+
+  .weather-info {
+    width: 720px;
+    height: 286px;
+    /* padding: 80px 24px; */
+    gap: 0;
+    flex-direction: row;
+  }
+
+  .location-info {
+    width: 378px;
+    height: 68px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .current-city {
+    width: 400px;
+    height: 34px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .weather-details-container {
+    width: 720px;
+    height: 118px;
+    gap: 20px;
+  }
+
+  .weather-details-box {
+    width: 165px;
+    height: 118px;
+    padding: 20px 20px;
+  }
+
+  .daily-forecast-container {
+    width: 720px;
+    height: 209px;
+  }
+
+  .daily-forecast-container p {
+    width: 720px;
+  }
+
+  .daily-forecast {
+    width: 720px;
+    height: 165px;
+    display: flex;
+    gap: 16px;
+  }
+
+  .weather-card {
+    width: 89.14px;
+    height: 165px;
+    align-items: center;
+    gap: 16px;
+    display: flex;
+    padding: 16px 10px;
+  }
+
+  .hourly-forecast-container {
+    width: 720px;
+    height: 693px;
+    display: flex;
+    gap: 16px;
+    padding: 24px 24px;
+  }
+
+  .hourly-forecast-header {
+    width: 672px;
+    height: 37px;
+  }
+
+  .hourly-forecast-card {
+    width: 672px;
+    height: 60px;
+  }
+}
+
+.hour-container {
+  width: 562px;
+}
+
+/* Destop screen (1440px+ 90em) */
+@media screen and (min-width: 70em) {
+  .container {
+    width: 1216px;
+    margin: 0 auto;
+  }
+
+  .header {
+    width: 1216px;
+    height: 43px;
+  }
+
+  .logo {
+    width: 1097px;
+    height: 40px;
+    gap: 10px;
+  }
+
+  .settings-container {
+    width: 119px;
+    height: 43px;
+    gap: 10px;
+  }
+
+  .units {
+    width: 119px;
+    height: 43px;
+    gap: 10px;
+    /* padding: 12px 16px; */
+    border-radius: 8px;
+  }
+
+  .title-box {
+    width: 1216px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    width: 731px;
+    height: 62px;
+  }
+
+  .main-content {
+    width: 1216px;
+    height: 797px;
+    gap: 48px;
+  }
+
+  .search-main-container {
+    width: 1216px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-container {
+    width: 656px;
+    height: 56px;
+    gap: 16px;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .search-box {
+    width: 656px;
+    height: 56px;
+    position: relative;
+    /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px; */
+  }
+
+  .search {
+    width: 526px;
+  }
+
+  .search .search-input {
+    height: 56px;
+    gap: 16px;
+  }
+
+  .search-button {
+    width: 114px;
+    height: 56px;
+  }
+
+  .content-container {
+    width: 1216px;
+    height: 693px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .left-content {
+    width: 800px;
+    height: 693px;
+    display: flex;
+    gap: 48px;
+    left: 0;
+  }
+
+  .weather-info-container {
+    width: 800px;
+    height: 436px;
+    /* display: flex;
+    gap: 32px; */
+  }
+
+  .weather-info {
+    width: 800px;
+    height: 286px;
+    padding: 80px 24px;
+    gap: 0;
+  }
+
+  .location-info {
+    width: 458px;
+    height: 68px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .current-city {
+    width: 400px;
+    height: 34px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .weather-details-container {
+    width: 800px;
+    height: 118px;
+    gap: 24px;
+  }
+
+  .weather-details-box {
+    width: 182px;
+    height: 118px;
+    padding: 20px 20px;
+    display: flex;
+    gap: 24px;
+  }
+
+  .daily-forecast-container {
+    width: 800px;
+    height: 209px;
+  }
+
+  .daily-forecast-container p {
+    width: 800px;
+  }
+
+  .daily-forecast {
+    width: 800px;
+    height: 165px;
+    display: flex;
+    gap: 16px;
+  }
+
+  .weather-card {
+    width: 100.57px;
+    height: 165px;
+    align-items: center;
+    gap: 16px;
+    display: flex;
+    padding: 16px 10px;
+  }
+
+  .hourly-forecast-container {
+    width: 384px;
+    height: 693px;
+    display: flex;
+    gap: 16px;
+    padding: 24px 24px;
+    right: 0;
+  }
+
+  .hourly-forecast-header {
+    width: 336px;
+    height: 37px;
+  }
+
+  .hourly-forecast-card {
+    width: 336px;
+    height: 60px;
+  }
+}

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Weather</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/responsive.css" />
+  </head>
+
+  <div id="body" class="body">
+    <div class="container">
+      <body>
+        <!--[if lt IE 7]>
+          <p class="browsehappy">
+            You are using an <strong>outdated</strong> browser. Please
+            <a href="#">upgrade your browser</a> to improve your experience.
+          </p>
+        <![endif]-->
+
+        <div class="head">
+          <div class="header">
+            <div class="logo">
+              <img src="assets/images/logo.svg" />
+            </div>
+            <div class="settings-container">
+              <div class="units">
+                <form>
+                  <select class="units" name="Units">
+                    <optgroup label="Temperature">
+                      <option value="Celcius (&degC)">Celcius (&degC)</option>
+                      <option value="Fahrenheit (&degF)">
+                        Fahrenheit (&degF)
+                      </option>
+                    </optgroup>
+
+                    <optgroup label="Wind Speed">
+                      <option value="km/h">km/h</option>
+                      <option value="mph">mph</option>
+                    </optgroup>
+
+                    <optgroup label="Precipitation">
+                      <option value="Millimeters (mm)">Millimeters (mm)</option>
+                      <option value="Inches (in)">Inches (in)</option>
+                    </optgroup>
+                  </select>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="title-box">
+            <div class="title">
+              <section>
+                <p>How's the sky looking today?</p>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-content">
+          <div class="search-main-container">
+            <div class="search-container">
+              <div class="search-box">
+                <form>
+                  <div class="search">
+                    <input
+                      type="search"
+                      placeholder="Search for a place..."
+                      class="search-input"
+                    />
+                    <img
+                      src="assets/images/icon-search.svg"
+                      alt="search"
+                      class="search-icon"
+                    />
+                  </div>
+                  <div class="search-button">
+                    <!-- <input type="submit" name="search" value="Search" /> -->
+                    <button type="submit" class="button">Search</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-container">
+            <div class="left-content">
+              <div class="weather-info-container">
+                <div class="weather-info">
+                  <div class="noise"></div>
+                  <div class="location-info">
+                    <div class="current-city">
+                      <span class="city">Berlin, Germany</span>
+                    </div>
+                    <div class="current-date">
+                      <span class="date">Tuesday, Aug 5, 2025</span>
+                    </div>
+                  </div>
+                  <div class="temperature-container">
+                    <div class="temperature-icon">
+                      <span class="sunny">
+                        <img src="assets/images/icon-sunny.webp" alt="sunny" />
+                      </span>
+                    </div>
+                    <div class="temperature">
+                      <span class="current-temperature">20&deg;</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="weather-details-container">
+                  <div class="weather-details-box" class="feels-like-container">
+                    <p>Feels Like</p>
+                    <span class="feels-like-value">18&deg;</span>
+                  </div>
+                  <div class="weather-details-box" class="humidity-container">
+                    <p>Humidity</p>
+                    <span class="humidity-value">46%</span>
+                  </div>
+                  <div class="weather-details-box" class="wind-container">
+                    <p>Wind</p>
+                    <div class="wind-value-container">
+                      <span class="wind-value"
+                        >14<span class="wind-speed">km/h</span></span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="weather-details-box"
+                    class="precipitation-container"
+                  >
+                    <p>Precipitation</p>
+                    <div class="precipitation-value-container">
+                      <span class="precipitation-value"
+                        >9<span class="precipitation-unit">mm</span></span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="daily-forecast-container">
+                <p>Daily forecast</p>
+                <div class="daily-forecast">
+                  <div class="weather-card">
+                    <div class="weekday">
+                      <span class="day-1">Tue</span>
+                    </div>
+
+                    <div class="weekday-icon weekday-icon-day-1">
+                      <span>
+                        <img src="assets/images/icon-rain.webp" alt="storm" />
+                      </span>
+                    </div>
+
+                    <div class="temperature-range">
+                      <span class="min-temperature min-temperature-day-1"
+                        >20&deg;</span
+                      >
+                      <span class="max-temperature max-temperature-day-1"
+                        >14&deg;</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="weather-card">
+                    <div class="weekday">
+                      <span class="day-2">Wed</span>
+                    </div>
+
+                    <div class="weekday-icon weekday-icon-day-2">
+                      <span>
+                        <img
+                          src="assets/images/icon-drizzle.webp"
+                          alt="storm"
+                        />
+                      </span>
+                    </div>
+
+                    <div class="temperature-range">
+                      <span class="min-temperature min-temperature-day-2"
+                        >21&deg;</span
+                      >
+                      <span class="max-temperature max-temperature-day-2"
+                        >15&deg;</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="weather-card">
+                    <div class="weekday">
+                      <span class="day-3">Thu</span>
+                    </div>
+
+                    <div class="weekday-icon weekday-icon-day-3">
+                      <span>
+                        <img src="assets/images/icon-sunny.webp" alt="storm" />
+                      </span>
+                    </div>
+
+                    <div class="temperature-range">
+                      <span class="min-temperature min-temperature-day-3"
+                        >24&deg;</span
+                      >
+                      <span class="max-temperature max-temperature-day-3"
+                        >14&deg;</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="weather-card">
+                    <div class="weekday">
+                      <span class="day-4">Fri</span>
+                    </div>
+
+                    <div class="weekday-icon weekday-icon-day-4">
+                      <span>
+                        <img
+                          src="assets/images/icon-partly-cloudy.webp"
+                          alt="storm"
+                        />
+                      </span>
+                    </div>
+
+                    <div class="temperature-range">
+                      <span class="min-temperature min-temperature-day-4"
+                        >25&deg;</span
+                      >
+                      <span class="max-temperature max-temperature-day-4"
+                        >13&deg;</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="weather-card">
+                    <div class="weekday">
+                      <span class="day-5">Sat</span>
+                    </div>
+
+                    <div class="weekday-icon weekday-icon-day-5">
+                      <span>
+                        <img src="assets/images/icon-storm.webp" alt="storm" />
+                      </span>
+                    </div>
+
+                    <div class="temperature-range">
+                      <span class="min-temperature min-temperature-day-5"
+                        >21&deg;</span
+                      >
+                      <span class="max-temperature max-temperature-day-5"
+                        >15&deg;</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="weather-card">
+                    <div class="weekday">
+                      <span class="day-6">Sun</span>
+                    </div>
+
+                    <div class="weekday-icon weekday-icon-day-6">
+                      <span>
+                        <img src="assets/images/icon-snow.webp" alt="storm" />
+                      </span>
+                    </div>
+
+                    <div class="temperature-range">
+                      <span class="min-temperature min-temperature-day-6"
+                        >25&deg;</span
+                      >
+                      <span class="max-temperature max-temperature-day-6"
+                        >16&deg;</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="weather-card">
+                    <div class="weekday">
+                      <span class="day-7">Mon</span>
+                    </div>
+
+                    <div class="weekday-icon weekday-icon-day-7">
+                      <span>
+                        <img src="assets/images/icon-fog.webp" alt="storm" />
+                      </span>
+                    </div>
+
+                    <div class="temperature-range">
+                      <span class="min-temperature min-temperature-day-7"
+                        >24&deg;</span
+                      >
+                      <span class="max-temperature max-temperature-day-7"
+                        >15&deg;</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hourly-forecast-container">
+              <div class="hourly-forecast-header">
+                <p>Hourly forecast</p>
+                <div class="hourly-forecast-dropdown">
+                  <form>
+                    <select class="days" name="days">
+                      <!-- <option value="Monday">Monday</option>
+                      <option value="Tuesday">Tuesday</option>
+                      <option value="Wednesday">Wednesday</option>
+                      <option value="Thursday">Thursday</option>
+                      <option value="Friday">Friday</option>
+                      <option value="Saturday">Saturday</option>
+                      <option value="Sunday">Sunday</option> -->
+                    </select>
+                  </form>
+                </div>
+              </div>
+
+              <div class="hourly-forecast-card">
+                <div class="box hourly-weather-icon">
+                  <span>
+                    <img src="assets/images/icon-storm.webp" alt="storm" />
+                  </span>
+                </div>
+
+                <div class="box hour-container">
+                  <span class="hour">3<span class="meridian"> PM</span></span>
+                </div>
+
+                <div class="hour-degree">
+                  <span class="box hourly-degree">20&deg;</span>
+                </div>
+              </div>
+
+              <div class="hourly-forecast-card">
+                <div class="box hourly-weather-icon">
+                  <span>
+                    <img src="assets/images/icon-storm.webp" alt="storm" />
+                  </span>
+                </div>
+
+                <div class="box hour-container">
+                  <span class="hour">4<span class="meridian"> PM</span></span>
+                </div>
+
+                <div class="hour-degree">
+                  <span class="box hourly-degree">20&deg;</span>
+                </div>
+              </div>
+
+              <div class="hourly-forecast-card">
+                <div class="box hourly-weather-icon">
+                  <span>
+                    <img src="assets/images/icon-sunny.webp" alt="storm" />
+                  </span>
+                </div>
+
+                <div class="box hour-container">
+                  <span class="hour">5<span class="meridian"> PM</span></span>
+                </div>
+
+                <div class="hour-degree">
+                  <span class="box hourly-degree">20&deg;</span>
+                </div>
+              </div>
+
+              <div class="hourly-forecast-card">
+                <div class="box hourly-weather-icon">
+                  <span>
+                    <img src="assets/images/icon-storm.webp" alt="storm" />
+                  </span>
+                </div>
+
+                <div class="box hour-container">
+                  <span class="hour">6<span class="meridian"> PM</span></span>
+                </div>
+
+                <div class="hour-degree">
+                  <span class="box hourly-degree">19&deg;</span>
+                </div>
+              </div>
+
+              <div class="hourly-forecast-card">
+                <div class="box hourly-weather-icon">
+                  <span>
+                    <img src="assets/images/icon-storm.webp" alt="storm" />
+                  </span>
+                </div>
+
+                <div class="box hour-container">
+                  <span class="hour">7<span class="meridian"> PM</span></span>
+                </div>
+
+                <div class="hour-degree">
+                  <span class="box hourly-degree">18&deg;</span>
+                </div>
+              </div>
+
+              <div class="hourly-forecast-card">
+                <div class="box hourly-weather-icon">
+                  <span>
+                    <img src="assets/images/icon-storm.webp" alt="storm" />
+                  </span>
+                </div>
+
+                <div class="box hour-container">
+                  <span class="hour">8<span class="meridian"> PM</span></span>
+                </div>
+
+                <div class="hour-degree">
+                  <span class="box hourly-degree">18&deg;</span>
+                </div>
+              </div>
+
+              <div class="hourly-forecast-card">
+                <div class="box hourly-weather-icon">
+                  <span>
+                    <img src="assets/images/icon-storm.webp" alt="storm" />
+                  </span>
+                </div>
+
+                <div class="box hour-container">
+                  <span class="hour">9<span class="meridian"> PM</span></span>
+                </div>
+
+                <div class="hour-degree">
+                  <span class="box hourly-degree">17&deg;</span>
+                </div>
+              </div>
+
+              <div class="hourly-forecast-card">
+                <div class="box hourly-weather-icon">
+                  <span>
+                    <img src="assets/images/icon-storm.webp" alt="storm" />
+                  </span>
+                </div>
+
+                <div class="box hour-container">
+                  <span class="hour">10<span class="meridian"> PM</span></span>
+                </div>
+
+                <div class="hour-degree">
+                  <span class="box hourly-degree">17&deg;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <p>
+            &copy;Copyright. Designed and developed By <a href="#">NoelPhil</a>
+          </p>
+        </footer>
+
+        <script src="main.js" async defer></script>
+      </body>
+    </div>
+  </div>
+</html>
