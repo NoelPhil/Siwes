@@ -30,28 +30,38 @@
               <img src="assets/images/logo.svg" />
             </div>
             <div class="settings-container">
-              <div class="units">
-                <form>
-                  <select class="units" name="Units">
-                    <optgroup label="Temperature">
-                      <option value="Celcius (&degC)">Celcius (&degC)</option>
-                      <option value="Fahrenheit (&degF)">
-                        Fahrenheit (&degF)
-                      </option>
-                    </optgroup>
+              <button id="settingsToggle" class="settings-btn">⚙️ Units</button>
 
-                    <optgroup label="Wind Speed">
-                      <option value="km/h">km/h</option>
-                      <option value="mph">mph</option>
-                    </optgroup>
+              <section class="settings-panel hidden">
+                <div class="switch-btn-box">
+                  <button id="paramBtn" type="button" class="switch-btn">
+                    Switch to Imperial
+                  </button>
+                </div>
+                <div class="dropdown-group">
+                  <p class="dropdown-label">Temperature</p>
+                  <ul class="dropdown-options" id="temperatureOptions">
+                    <li data-value="celsius" class="active">Celsius (°C)</li>
+                    <li data-value="fahrenheit">Fahrenheit (°F)</li>
+                  </ul>
+                </div>
 
-                    <optgroup label="Precipitation">
-                      <option value="Millimeters (mm)">Millimeters (mm)</option>
-                      <option value="Inches (in)">Inches (in)</option>
-                    </optgroup>
-                  </select>
-                </form>
-              </div>
+                <div class="dropdown-group">
+                  <p class="dropdown-label">Wind Speed</p>
+                  <ul class="dropdown-options" id="windOptions">
+                    <li data-value="kmh" class="active">km/h</li>
+                    <li data-value="mph">mph</li>
+                  </ul>
+                </div>
+
+                <div class="dropdown-group">
+                  <p class="dropdown-label">Precipitation</p>
+                  <ul class="dropdown-options" id="precipOptions">
+                    <li data-value="mm" class="active">Millimeters (mm)</li>
+                    <li data-value="in">Inches (in)</li>
+                  </ul>
+                </div>
+              </section>
             </div>
           </div>
 

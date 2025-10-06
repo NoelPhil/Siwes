@@ -7,6 +7,8 @@
   .container {
     width: 768px;
     margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .header {
@@ -119,7 +121,7 @@
   }
 
   .location-info {
-    width: 378px;
+    width: 400px;
     height: 68px;
     display: flex;
     justify-content: flex-start;
@@ -128,6 +130,11 @@
   .current-city {
     width: 400px;
     height: 34px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .current-date {
     display: flex;
     justify-content: flex-start;
   }
@@ -186,10 +193,10 @@
     width: 672px;
     height: 60px;
   }
-}
 
-.hour-container {
-  width: 562px;
+  .hour-container {
+    width: 562px;
+  }
 }
 
 /* Destop screen (1440px+ 90em) */
@@ -197,6 +204,8 @@
   .container {
     width: 1216px;
     margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .header {
@@ -325,6 +334,11 @@
   .current-city {
     width: 400px;
     height: 34px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .current-date {
     display: flex;
     justify-content: flex-start;
   }
