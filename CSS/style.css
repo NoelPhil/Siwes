@@ -404,7 +404,7 @@ html {
 }
 
 .city {
-  font-size: clamp(5px, 5vw, 30px);
+  font-size: clamp(5px, 7vw, 30px);
 }
 
 .current-date {
@@ -417,6 +417,7 @@ html {
 
 .date {
   font-size: clamp(5px, 5vw, 15px);
+  text-align: center;
 }
 
 /* Temperature container */
@@ -439,6 +440,12 @@ html {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.weather-description {
+  font-size: clamp(10px, 4vw, 13px);
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .temperature {
@@ -615,6 +622,7 @@ html {
   background-color: #262540;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   position: absolute;
   bottom: 0;
 }
@@ -645,14 +653,104 @@ html {
   padding: 8px 16px;
   border-radius: 8px;
   background-color: #3c3b5e;
+  position: relative;
 }
 
-.days {
+/* .days {
   background-color: #3c3b5e;
   border-color: #3c3b5e;
+} */
+
+.weekday-dropdown {
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  width: 120px;
+  height: 37px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+}
+
+.selected-day {
+  padding: 8px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.weekday-list {
+  position: absolute;
+
+  right: 0;
+  background: #262540;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  gap: 4px;
+  padding: 8px 8px;
+  z-index: 10;
+  width: 214px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.weekday-list.hidden {
+  display: none;
+}
+
+.weekday-list li {
+  list-style: none;
+  padding: 10px 8px;
+  text-align: left;
+  transition: background 0.3s;
+  width: 198px;
+  height: 39px;
+  gap: 10;
+  border-radius: 8px;
+
+  justify-content: center;
+}
+
+.weekday-list li:hover {
+  background: #334155;
+}
+
+.hourly-forecast-wrapper {
+  position: relative;
+  width: 336px; /* container width stays fixed */
+  height: 590px;
+  overflow: hidden; /* hide native scrollbar */
 }
 
 /* Hourly weather card */
+.hourly-forecast-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 336px;
+  height: 590px;
+  gap: 14px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+.hourly-forecast-cards::-webkit-scrollbar {
+  width: 1px;
+}
+
+.hourly-forecast-cards::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 .hourly-forecast-card {
   width: 311px;
   height: 60px;
@@ -674,7 +772,7 @@ html {
 }
 
 .hourly-weather-icon {
-  width: 40px;
+  width: 60px;
   height: 40px;
 }
 
@@ -693,7 +791,7 @@ html {
 }
 
 .hour-degree {
-  width: 26px;
+  width: 40px;
   height: 24px;
   font-size: 20px;
 }

@@ -116,7 +116,12 @@
                   <div class="temperature-container">
                     <div class="temperature-icon">
                       <span class="sunny">
-                        <img src="assets/images/icon-sunny.webp" alt="sunny" />
+                        <img
+                          class="main-weather-icon"
+                          src="assets/images/icon-sunny.webp"
+                          alt="sunny"
+                        />
+                        <p class="weather-description"></p>
                       </span>
                     </div>
                     <div class="temperature">
@@ -319,145 +324,171 @@
               <div class="hourly-forecast-header">
                 <p>Hourly forecast</p>
                 <div class="hourly-forecast-dropdown">
-                  <form>
-                    <select class="days" name="days">
-                      <!-- <option value="Monday">Monday</option>
+                  <div class="weekday-dropdown">
+                    <div class="selected-day">Monday</div>
+                    <ul class="weekday-list hidden"></ul>
+                  </div>
+
+                  <!-- <form>
+                    <select class="days" name="days"> -->
+                  <!-- <option value="Monday">Monday</option>
                       <option value="Tuesday">Tuesday</option>
                       <option value="Wednesday">Wednesday</option>
                       <option value="Thursday">Thursday</option>
                       <option value="Friday">Friday</option>
                       <option value="Saturday">Saturday</option>
                       <option value="Sunday">Sunday</option> -->
-                    </select>
-                  </form>
+                  <!-- </select>
+                  </form> -->
                 </div>
               </div>
 
-              <div class="hourly-forecast-card">
-                <div class="box hourly-weather-icon">
-                  <span>
-                    <img src="assets/images/icon-storm.webp" alt="storm" />
-                  </span>
-                </div>
+              <div class="hourly-forecast-wrapper">
+                <div class="hourly-forecast-cards">
+                  <div class="hourly-forecast-card">
+                    <div class="box hourly-weather-icon">
+                      <span>
+                        <img src="assets/images/icon-storm.webp" alt="storm" />
+                      </span>
+                    </div>
 
-                <div class="box hour-container">
-                  <span class="hour">3<span class="meridian"> PM</span></span>
-                </div>
+                    <div class="box hour-container">
+                      <span class="hour"
+                        >3<span class="meridian"> PM</span></span
+                      >
+                    </div>
 
-                <div class="hour-degree">
-                  <span class="box hourly-degree">20&deg;</span>
-                </div>
-              </div>
+                    <div class="hour-degree">
+                      <span class="box hourly-degree">20&deg;</span>
+                    </div>
+                  </div>
 
-              <div class="hourly-forecast-card">
-                <div class="box hourly-weather-icon">
-                  <span>
-                    <img src="assets/images/icon-storm.webp" alt="storm" />
-                  </span>
-                </div>
+                  <div class="hourly-forecast-card">
+                    <div class="box hourly-weather-icon">
+                      <span>
+                        <img src="assets/images/icon-storm.webp" alt="storm" />
+                      </span>
+                    </div>
 
-                <div class="box hour-container">
-                  <span class="hour">4<span class="meridian"> PM</span></span>
-                </div>
+                    <div class="box hour-container">
+                      <span class="hour"
+                        >4<span class="meridian"> PM</span></span
+                      >
+                    </div>
 
-                <div class="hour-degree">
-                  <span class="box hourly-degree">20&deg;</span>
-                </div>
-              </div>
+                    <div class="hour-degree">
+                      <span class="box hourly-degree">20&deg;</span>
+                    </div>
+                  </div>
 
-              <div class="hourly-forecast-card">
-                <div class="box hourly-weather-icon">
-                  <span>
-                    <img src="assets/images/icon-sunny.webp" alt="storm" />
-                  </span>
-                </div>
+                  <div class="hourly-forecast-card">
+                    <div class="box hourly-weather-icon">
+                      <span>
+                        <img src="assets/images/icon-sunny.webp" alt="storm" />
+                      </span>
+                    </div>
 
-                <div class="box hour-container">
-                  <span class="hour">5<span class="meridian"> PM</span></span>
-                </div>
+                    <div class="box hour-container">
+                      <span class="hour"
+                        >5<span class="meridian"> PM</span></span
+                      >
+                    </div>
 
-                <div class="hour-degree">
-                  <span class="box hourly-degree">20&deg;</span>
-                </div>
-              </div>
+                    <div class="hour-degree">
+                      <span class="box hourly-degree">20&deg;</span>
+                    </div>
+                  </div>
 
-              <div class="hourly-forecast-card">
-                <div class="box hourly-weather-icon">
-                  <span>
-                    <img src="assets/images/icon-storm.webp" alt="storm" />
-                  </span>
-                </div>
+                  <div class="hourly-forecast-card">
+                    <div class="box hourly-weather-icon">
+                      <span>
+                        <img src="assets/images/icon-storm.webp" alt="storm" />
+                      </span>
+                    </div>
 
-                <div class="box hour-container">
-                  <span class="hour">6<span class="meridian"> PM</span></span>
-                </div>
+                    <div class="box hour-container">
+                      <span class="hour"
+                        >6<span class="meridian"> PM</span></span
+                      >
+                    </div>
 
-                <div class="hour-degree">
-                  <span class="box hourly-degree">19&deg;</span>
-                </div>
-              </div>
+                    <div class="hour-degree">
+                      <span class="box hourly-degree">19&deg;</span>
+                    </div>
+                  </div>
 
-              <div class="hourly-forecast-card">
-                <div class="box hourly-weather-icon">
-                  <span>
-                    <img src="assets/images/icon-storm.webp" alt="storm" />
-                  </span>
-                </div>
+                  <div class="hourly-forecast-card">
+                    <div class="box hourly-weather-icon">
+                      <span>
+                        <img src="assets/images/icon-storm.webp" alt="storm" />
+                      </span>
+                    </div>
 
-                <div class="box hour-container">
-                  <span class="hour">7<span class="meridian"> PM</span></span>
-                </div>
+                    <div class="box hour-container">
+                      <span class="hour"
+                        >7<span class="meridian"> PM</span></span
+                      >
+                    </div>
 
-                <div class="hour-degree">
-                  <span class="box hourly-degree">18&deg;</span>
-                </div>
-              </div>
+                    <div class="hour-degree">
+                      <span class="box hourly-degree">18&deg;</span>
+                    </div>
+                  </div>
 
-              <div class="hourly-forecast-card">
-                <div class="box hourly-weather-icon">
-                  <span>
-                    <img src="assets/images/icon-storm.webp" alt="storm" />
-                  </span>
-                </div>
+                  <div class="hourly-forecast-card">
+                    <div class="box hourly-weather-icon">
+                      <span>
+                        <img src="assets/images/icon-storm.webp" alt="storm" />
+                      </span>
+                    </div>
 
-                <div class="box hour-container">
-                  <span class="hour">8<span class="meridian"> PM</span></span>
-                </div>
+                    <div class="box hour-container">
+                      <span class="hour"
+                        >8<span class="meridian"> PM</span></span
+                      >
+                    </div>
 
-                <div class="hour-degree">
-                  <span class="box hourly-degree">18&deg;</span>
-                </div>
-              </div>
+                    <div class="hour-degree">
+                      <span class="box hourly-degree">18&deg;</span>
+                    </div>
+                  </div>
 
-              <div class="hourly-forecast-card">
-                <div class="box hourly-weather-icon">
-                  <span>
-                    <img src="assets/images/icon-storm.webp" alt="storm" />
-                  </span>
-                </div>
+                  <div class="hourly-forecast-card">
+                    <div class="box hourly-weather-icon">
+                      <span>
+                        <img src="assets/images/icon-storm.webp" alt="storm" />
+                      </span>
+                    </div>
 
-                <div class="box hour-container">
-                  <span class="hour">9<span class="meridian"> PM</span></span>
-                </div>
+                    <div class="box hour-container">
+                      <span class="hour"
+                        >9<span class="meridian"> PM</span></span
+                      >
+                    </div>
 
-                <div class="hour-degree">
-                  <span class="box hourly-degree">17&deg;</span>
-                </div>
-              </div>
+                    <div class="hour-degree">
+                      <span class="box hourly-degree">17&deg;</span>
+                    </div>
+                  </div>
 
-              <div class="hourly-forecast-card">
-                <div class="box hourly-weather-icon">
-                  <span>
-                    <img src="assets/images/icon-storm.webp" alt="storm" />
-                  </span>
-                </div>
+                  <div class="hourly-forecast-card">
+                    <div class="box hourly-weather-icon">
+                      <span>
+                        <img src="assets/images/icon-storm.webp" alt="storm" />
+                      </span>
+                    </div>
 
-                <div class="box hour-container">
-                  <span class="hour">10<span class="meridian"> PM</span></span>
-                </div>
+                    <div class="box hour-container">
+                      <span class="hour"
+                        >10<span class="meridian"> PM</span></span
+                      >
+                    </div>
 
-                <div class="hour-degree">
-                  <span class="box hourly-degree">17&deg;</span>
+                    <div class="hour-degree">
+                      <span class="box hourly-degree">17&deg;</span>
+                    </div>
+                    <div class="scrollbar-thumb"></div>
+                  </div>
                 </div>
               </div>
             </div>
