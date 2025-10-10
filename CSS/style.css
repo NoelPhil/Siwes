@@ -44,6 +44,9 @@ html {
   background-color: #02012c;
   margin-top: 20px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .header {
@@ -84,6 +87,7 @@ html {
 }
 
 .settings-btn {
+  width: 89px;
   background: rgba(255, 255, 255, 0.1);
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -92,6 +96,8 @@ html {
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   transition: all 0.2s;
+  position: absolute;
+  right: 0;
 }
 .settings-btn:hover {
   background: rgba(255, 255, 255, 0.2);
@@ -217,6 +223,8 @@ html {
 }
 
 .main-content {
+  display: flex;
+  flex-direction: column;
   width: 343px;
   height: 2034px;
   gap: 32px;
@@ -332,6 +340,7 @@ html {
   height: 1878px;
   gap: 32px;
   position: absolute;
+  margin-bottom: 25px;
   bottom: 0;
   /* make it relative too */
   position: absolute;
@@ -404,7 +413,7 @@ html {
 }
 
 .city {
-  font-size: clamp(5px, 7vw, 30px);
+  font-size: clamp(5px, 6vw, 30px);
 }
 
 .current-date {
@@ -416,7 +425,7 @@ html {
 }
 
 .date {
-  font-size: clamp(5px, 5vw, 15px);
+  font-size: clamp(5px, 5vw, 12px);
   text-align: center;
 }
 
@@ -734,13 +743,15 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 336px;
+  width: 330px;
   height: 590px;
   gap: 14px;
   overflow-y: auto;
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: #888 transparent;
+
+  padding-right: 6px;
 }
 
 .hourly-forecast-cards::-webkit-scrollbar {
@@ -797,11 +808,74 @@ html {
 }
 
 .footer {
-  width: 100%;
+  width: 343px;
   text-align: center;
   margin-top: 20px;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer p {
   font-size: 15px;
+}
+
+/* Skeleton Loading Effect */
+.skeleton {
+  position: relative;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Shimmer animation */
+.skeleton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    left: 150%;
+  }
+}
+
+/* Compact variants for inline spans */
+.skeleton-inline {
+  display: inline-block;
+  height: 1em;
+  width: 2em;
+  vertical-align: middle;
+  border-radius: 3px;
+}
+
+/* For icons */
+.skeleton-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+/* Smooth fade transition when real data replaces skeleton */
+.fade-in {
+  animation: fadeIn 0.4s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

@@ -193,6 +193,14 @@
     height: 37px;
   }
 
+  .hourly-forecast-wrapper {
+    width: 672px;
+  }
+
+  .hourly-forecast-cards {
+    width: 672px;
+  }
+
   .hourly-forecast-card {
     width: 672px;
     height: 60px;
@@ -200,6 +208,10 @@
 
   .hour-container {
     width: 562px;
+  }
+
+  .footer {
+    width: 768px;
   }
 }
 
@@ -404,8 +416,20 @@
     height: 37px;
   }
 
+  .hourly-forecast-wrapper {
+    width: 336px;
+  }
+
+  .hourly-forecast-cards {
+    width: 336px;
+  }
+
   .hourly-forecast-card {
     width: 336px;
     height: 60px;
+  }
+
+  .footer {
+    width: 1216px;
   }
 }
